@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2019 - 2023 UnionTech Software Technology Co., Ltd.
+// SPDX-FileCopyrightText: 2019 - 2026 UnionTech Software Technology Co., Ltd.
 //
 // SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -507,7 +507,7 @@ int utf8MultiByteCount(char *buf, size_t size)
     };
 
     // 取得 UTF-8 字节序数值
-    auto LeftBitFunc = [](char data) -> int {
+    auto LeftBitFunc = [](unsigned char data) -> int {
         // 返回前导1的个数
         int res = 0;
         while (data & 0x80) {
